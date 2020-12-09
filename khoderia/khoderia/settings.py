@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '#^pz$&zf_sb1-%cdlya=!sh+$gcm6+_-9=85nas1mkyr(ge+sm'
+# TODO: Change this key when prodution!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -54,7 +55,9 @@ ROOT_URLCONF = 'khoderia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / "templates"
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Istanbul'
 
 USE_I18N = True
 
@@ -118,3 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+]
