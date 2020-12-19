@@ -1,28 +1,14 @@
-{% comment %}
-  Add Stylesheets and title here.
-{% endcomment %}
+{% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-    <div class="header">
-        <a href="koderia(anasayfa).html" style="text-decoration: none" ><p class='header__logo'>Khoderia</p></a>
-        <div class="header__bar">
-          <a href="koderia(about).html" style="text-decoration: none" ><p class="header__bar-about">About</p></a>
-          <a href="koderia(login).html" style="text-decoration: none" ><p class="header__bar-login">Login</p></a>
-        </div>
-    </div>
-    <br><br>
-    <main>
-        <div class="container" id="container">
-            <ul>
-                <a href="koderia(create topic).html" style="text-decoration: none"><li id="ct">Create Topic <i class="fas fa-plus" style="color: white;"></i></li></a>
-            </ul>
-            <div class="posts">
-                <hr class="hr">
-                <div style="margin-top: 50px;"></div>
-                <div class="post">
-                    <a style="text-decoration: none" href="koderia(post).html" ><h3 class="post-header">Post <i class="far fa-envelope"></i></h3></a>
-                </div>
-            </div>
-        </div>
-    </main>
+{% include "navbar.html" %}
+
+<div class="container">
+  <h1>Welcome to Khoderia!</h1>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
 {% endblock %}

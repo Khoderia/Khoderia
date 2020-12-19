@@ -1,31 +1,10 @@
+
+{% extends "base.html" %}
+
 {% comment %}
   Add Stylesheets and title here.
 {% endcomment %}
 
 {% block content %}
-    <div class="header">  
-        <a href="koderia(anasayfa).html" style="text-decoration: none" ><p class='header__logo'>Khoderia</p></a>
-        <div class="header__bar">
-          <a href="koderia(about).html" style="text-decoration: none" ><p class="header__bar-about">About</p></a>
-          <a href="koderia(login).html" style="text-decoration: none" ><p class="header__bar-login">Login</p></a>
-        </div>
-    </div>
-    <br><br>
-    <h4 style='color: white; margin-left:20px'>Write Your Project Name</h4>
-    <br>
-    <input placeholder='Write Your Project Name' style='margin-left:20px; width:475px;'/>
-    <br><br>
-    <h4 style='color: white; margin-left:20px'>What is the project purpose</h4>
-    <br>
-    <textarea style="margin-left:20px;" class="area" rows="10" cols="65"></textarea>
-    <br>
-    <br>
-    <h4 style='color: white; margin-left:20px'>Your Project Codes</h4>
-    <br>
-    <h5 style='color: white; margin-left:20px'>If you want add codes you can add your codes in this area</h5>
-    <br>
-    <textarea style="margin-left:20px;" class="area" rows="10" cols="65"></textarea>
-    <br>
-    <br>
-    <button class='save'>Save</button>
+
 {% endblock %}
